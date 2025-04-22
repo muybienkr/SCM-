@@ -1,4 +1,4 @@
 document.getElementById("btn").addEventListener("click", function() {
-    alert("こんにちは！きょぴぽよ！");
+    alert("こんにちは！きょぴ！");
   });
   
