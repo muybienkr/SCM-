@@ -46,3 +46,72 @@ body{
   font-size: 16px;
   font-family: sans-serif;
 }
+
+.SCM_main{
+  position: relative;
+  width: 100%;
+  max-width: 3000px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.SCM_main img{
+  width: 100%;
+  max-width: 3000px;
+  height: auto;
+}
+
+.text-overlay1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 75px;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+.SCM_SCM{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.SCM_philosophy{
+  text-align: center;
+  margin-top: 100px;
+}
+
+button{
+  margin: 8px 0;
+}
+
+.SCM_department{
+  margin-top: 100px;
+}
+
+.SCM_department h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.department_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.department_container a{
+  width: calc(50% - 10px);
+  text-align: center;
+}
+
+.department_container img{
+  width: 100%;
+  height: auto;
+}
