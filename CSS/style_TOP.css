@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+.logo{
+  text-align: left;
+  margin: 20px auto 20px;
+}
+
+.logo img{
+  width: 170px;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+.header ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0 40px 0 40px;
+}
+
+.header ul li{
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+body{
+  padding-top: 180px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.TOP_main{
+  position: relative;
+  width: 100%;
+  max-width: 3000px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.TOP_main img{
+  width: 100%;
+  max-width: 3000px;
+  height: auto;
+}
+
+.text-overlay1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 75px;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+.TOP_SCM{
+  text-align: center;
+  margin-top: 100px;
+}
+
+button{
+  margin: 8px 0;
+  text-align: center;
+}
+
+.TOP_ATY{
+  margin-top: 100px;
+}
+
+.TOP_ATY h2{
+  text-align: center;
+}
+
+.main_activity{
+  text-align: center;;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+  border: 1px solid black;
+}
+
+.activity{
+  margin: 40px 40px 40px;
+  position: relative;
+}
+
+.text-overlay2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+
+}
+
+.TOP_NEWS{
+  margin-top: 100px;
+}
+
+.TOP_NEWS h2{
+  text-align: center;
+}
+
+.TOP_NEWS p{
+  text-align: center;
+  background-color: skyblue;
+}
+
+.TOP_SNS{
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+.logo-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TOP_SNS_logo{
+  text-align: left;
+  margin: 20px 40px 20px;
+  padding-top: 40px;
+}
+
+.TOP_SNS_logo img{
+  width: 200px;
+}
+
+.gmail{
+  width: 200px;
+  text-align: center;
+}
+
+.TOP_bottom_list{
+  margin: 20px 40px 20px;
+  border: 1px solid gray;
+}
+
+.TOP_bottom_list ul{
+  padding: 4px 8px;
+}
+.TOP_bottom_list li{
+  margin-bottom: 8px;
+}
+.SNS_icon{
+  text-align: center;
+}
+.SNS_icon a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer{
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 4px 0;
+}
