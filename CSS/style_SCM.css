@@ -90,10 +90,6 @@ body{
   margin-top: 15px;;
 }
 
-button{
-  margin: 8px 0;
-}
-
 .SCM_RINENN{
   margin-top: 100px;
   text-align: center;
@@ -107,20 +103,7 @@ button{
   margin-top: 15px;;
 }
 
-button {
-  background-color: mediumturquoise; /* 背景色：緑っぽい */
-  color: white; /* 文字色：白 */
-  padding:6px 12px; /* 内側の余白 */
-  border: none; /* 枠線なし */
-  border-radius: 8px; /* 角丸 */
-  font-size: 20px; /* 文字サイズ */
-  cursor: pointer; /* マウスを当てたらポインターに */
-  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
-}
 
-button:hover {
-  background-color: #45a049; /* ホバー時に少し濃い緑 */
-}
 
 .SCM_department{
   margin-top: 100px;
@@ -151,3 +134,76 @@ button:hover {
   text-align: center;
 }
 
+.SCM_COMENT{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.SNS{
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+.logo-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SNS_logo{
+  text-align: left;
+  margin: 20px 40px 20px;
+  padding-top: 40px;
+}
+
+.SNS_logo img{
+  width: 200px;
+}
+
+.gmail{
+  width: 200px;
+  text-align: center;
+}
+
+.bottom_list{
+  margin: 20px 40px 20px;
+  border: 1px solid gray;
+}
+
+.bottom_list ul{
+  padding: 8px 8px;
+  text-align: center;;
+}
+.bottom_list li{
+  margin-bottom: 4px;
+}
+.SNS_icon{
+  text-align: center;
+}
+.SNS_icon a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer{
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 4px 0;
+}
+
+button {
+  margin: 8px 0;
+  background-color: mediumturquoise; /* 背景色：緑っぽい */
+  color: white; /* 文字色：白 */
+  padding:6px 12px; /* 内側の余白 */
+  border: none; /* 枠線なし */
+  border-radius: 8px; /* 角丸 */
+  font-size: 20px; /* 文字サイズ */
+  cursor: pointer; /* マウスを当てたらポインターに */
+  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
+}
+
+button:hover {
+  background-color: #45a049; /* ホバー時に少し濃い緑 */
+}

@@ -85,10 +85,6 @@ body{
   margin-top: 100px;
 }
 
-button{
-  margin: 8px 0;
-  text-align: center;
-}
 
 .TOP_ATY{
   margin-top: 100px;
@@ -136,7 +132,7 @@ button{
   background-color: skyblue;
 }
 
-.TOP_SNS{
+.SNS{
   margin-top: 100px;
   background-color: whitesmoke;
 }
@@ -146,13 +142,14 @@ button{
   justify-content: space-between;
 }
 
-.TOP_SNS_logo{
+.SNS_logo{
   text-align: left;
+  align-items: center;
   margin: 20px 40px 20px;
   padding-top: 40px;
 }
 
-.TOP_SNS_logo img{
+.SNS_logo img{
   width: 200px;
 }
 
@@ -161,16 +158,16 @@ button{
   text-align: center;
 }
 
-.TOP_bottom_list{
+.bottom_list{
   margin: 20px 40px 20px;
   border: 1px solid gray;
 }
 
-.TOP_bottom_list ul{
+.bottom_list ul{
   padding: 8px 8px;
-  text-align: center;;
+  text-align: center;
 }
-.TOP_bottom_list li{
+.bottom_list li{
   margin-bottom: 4px;
 }
 .SNS_icon{
@@ -189,6 +186,7 @@ footer{
 }
 
 button {
+  margin: 8px 0;
   background-color: mediumturquoise; /* 背景色：緑っぽい */
   color: white; /* 文字色：白 */
   padding: 6px 12px; /* 内側の余白 */
