@@ -67,25 +67,59 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 75px;
+  font-size: clamp(24px, 6vw, 75px);
   background-color: rgba(0, 0, 0, 0.0);
   padding: 10px 20px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
+@media (max-width: 480px){
+  .text-overlay1{
+    font-size: clamp(16px, 5vw, 40px);
+  }
+}
 
 .SCM_SCM{
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
-.SCM_philosophy{
-  text-align: center;
-  margin-top: 100px;
+.SCM_SCM button{
+  margin-top: 15px;;
 }
 
 button{
   margin: 8px 0;
+}
+
+.SCM_RINENN{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.SCM_RINENN h2{
+  margin-bottom: 10px;
+}
+
+.SCM_RINENN button{
+  margin-top: 15px;;
+}
+
+button {
+  background-color: mediumturquoise; /* 背景色：緑っぽい */
+  color: white; /* 文字色：白 */
+  padding:6px 12px; /* 内側の余白 */
+  border: none; /* 枠線なし */
+  border-radius: 8px; /* 角丸 */
+  font-size: 20px; /* 文字サイズ */
+  cursor: pointer; /* マウスを当てたらポインターに */
+  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
+}
+
+button:hover {
+  background-color: #45a049; /* ホバー時に少し濃い緑 */
 }
 
 .SCM_department{
@@ -114,4 +148,6 @@ button{
 .department_container img{
   width: 100%;
   height: auto;
+  text-align: center;
 }
+

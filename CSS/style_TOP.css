@@ -67,12 +67,18 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 75px;
+  font-size: clamp(24px, 6vw, 75px);
   background-color: rgba(0, 0, 0, 0.0);
   padding: 10px 20px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
+@media (max-width: 480px){
+  .text-overlay1{
+    font-size: clamp(16px, 5vw, 40px);
+  }
+}
 
 .TOP_SCM{
   text-align: center;
@@ -93,7 +99,7 @@ button{
 }
 
 .main_activity{
-  text-align: center;;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   margin: 20px 80px;
@@ -161,10 +167,11 @@ button{
 }
 
 .TOP_bottom_list ul{
-  padding: 4px 8px;
+  padding: 8px 8px;
+  text-align: center;;
 }
 .TOP_bottom_list li{
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .SNS_icon{
   text-align: center;
@@ -179,4 +186,19 @@ footer{
   border-top: 1px solid gray;
   text-align: center;
   padding: 4px 0;
+}
+
+button {
+  background-color: mediumturquoise; /* 背景色：緑っぽい */
+  color: white; /* 文字色：白 */
+  padding: 6px 12px; /* 内側の余白 */
+  border: none; /* 枠線なし */
+  border-radius: 8px; /* 角丸 */
+  font-size: 20px; /* 文字サイズ */
+  cursor: pointer; /* マウスを当てたらポインターに */
+  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
+}
+
+button:hover {
+  background-color: #45a049; /* ホバー時に少し濃い緑 */
 }
