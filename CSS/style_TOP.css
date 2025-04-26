@@ -167,10 +167,11 @@ button{
 }
 
 .TOP_bottom_list ul{
-  padding: 4px 8px;
+  padding: 8px 8px;
+  text-align: center;;
 }
 .TOP_bottom_list li{
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .SNS_icon{
   text-align: center;
@@ -185,4 +186,23 @@ footer{
   border-top: 1px solid gray;
   text-align: center;
   padding: 4px 0;
+}
+
+button {
+  background-color: #4CAF50; /* 背景色：緑っぽい */
+  color: white; /* 文字色：白 */
+  padding: 6px 12px; /* 内側の余白 */
+  border: none; /* 枠線なし */
+  border-radius: 8px; /* 角丸 */
+  font-size: 20px; /* 文字サイズ */
+  cursor: pointer; /* マウスを当てたらポインターに */
+  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
+}
+
+button:hover {
+  background-color: #45a049; /* ホバー時に少し濃い緑 */
+}
+
+button p {
+  margin: 0; /* pタグのデフォルトの余白を消す */
 }
