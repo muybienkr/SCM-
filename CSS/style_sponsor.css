@@ -46,3 +46,146 @@ body{
   font-size: 16px;
   font-family: sans-serif;
 }
+
+.TOP_main{
+  position: relative;
+  width: 100%;
+  max-width: 3000px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.TOP_main img{
+  width: 100%;
+  max-width: 3000px;
+  height: auto;
+}
+
+.text-overlay1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(24px, 6vw, 75px);
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 10px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px){
+  .text-overlay1{
+    font-size: clamp(16px, 5vw, 40px);
+  }
+}
+
+.sponsor_top{
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.Logo_SCM{
+  width: 30%;
+}
+
+.appriciation{
+  width: 70%;
+  font-size: 24px;
+}
+
+.sponsor{
+  display: inline-block;
+  
+  margin-bottom: 24px;
+  border-bottom: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+  .sponsor_top {
+    flex-direction: column; /* スマホでは縦並びにする */
+    align-items: center;     /* 縦並び時にも中央揃えにする */
+    padding: 20px;           /* スマホ用にパディング小さくしてもOK */
+    gap: 20px;               /* スマホ用の間隔も調整 */
+  }
+
+  .Logo_SCM {
+    width: 80%; /* ロゴ画像をちょっと大きくしてもOK */
+  }
+
+  .appriciation {
+    width: 70%; /* テキスト部分も広めにするときれい */
+    text-align: center; /* テキストも中央揃えに */
+    font-size: 16px;
+  }
+}
+
+
+.sponsor_image{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+@media(max-width: 768px){
+  .sponsor_image{
+    grid-template-columns: 1fr;
+  }
+}
+
+.SNS{
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+.logo-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.SNS_logo{
+  text-align: left;
+  align-items: center;
+  margin: 20px 40px 20px;
+  padding-top: 40px;
+}
+
+.SNS_logo img{
+  width: 200px;
+}
+
+.gmail{
+  width: 200px;
+  text-align: center;
+}
+
+.bottom_list{
+  margin: 20px 40px 20px;
+  border: 1px solid gray;
+}
+
+.bottom_list ul{
+  padding: 8px 8px;
+  text-align: center;
+}
+.bottom_list li{
+  margin-bottom: 4px;
+}
+.SNS_icon{
+  text-align: center;
+}
+.SNS_icon a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer{
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 4px 0;
+}
