@@ -2,7 +2,7 @@
 
 .logo{
   text-align: left;
-  margin: 20px auto 20px;
+  margin: 10px auto;
 }
 
 .logo img{
@@ -35,14 +35,14 @@ ul{
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: 160px;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 body{
-  padding-top: 180px;
+  padding-top: 160px;
   font-size: 16px;
   font-family: sans-serif;
 }
@@ -85,7 +85,8 @@ body{
   align-items: center;
   padding: 40px 60px;
   gap: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid gray;
 }
 
 .Logo_SCM{
@@ -94,7 +95,7 @@ body{
 
 .appriciation{
   width: 70%;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .sponsor{
@@ -129,6 +130,7 @@ body{
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
   justify-items: center;
+  margin-top: 40px;
 }
 
 @media(max-width: 768px){

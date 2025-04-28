@@ -2,7 +2,7 @@
 
 .logo{
   text-align: left;
-  margin: 20px auto 20px;
+  margin: 10px auto;
 }
 
 .logo img{
@@ -35,14 +35,14 @@ ul{
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: 160px;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 body{
-  padding-top: 180px;
+  padding-top: 160px;
   font-size: 16px;
   font-family: sans-serif;
 }
@@ -191,6 +191,12 @@ body{
 
 .content{
   margin-bottom: 8px;
+}
+
+@media(max-width: 768px){
+  .TOP_NEWS{
+    margin: 8px 60px;
+  }
 }
 
 .SNS{
