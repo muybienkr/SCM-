@@ -80,14 +80,47 @@ body{
   }
 }
 
-.TOP_SCM{
+.TOP_MISSMR{
   text-align: center;
   margin-top: 30px;
 }
 
-.TOP_SCM h2{
+.TOP_MISSMR h2{
   font-size: 45px;
   margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.TOP_MISSMR p{
+  font-size: 18px;;
+}
+
+.SECOND_MISSMR{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.MISSMR_text{
+  text-align: center;
+  margin-top: 220px;
+  font-size: 30px;
+}
+
+.MISSMR_text p{
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.SECOND_MISSMR img{
+  width: 500px; /* 好きな幅 */
+  height: 700px; /* 好きな高さ */
+  object-fit: cover; /* 枠にぴったりカットしてはめる */
+  display: block;
 }
 
 .CONCEPT{
@@ -98,10 +131,13 @@ body{
 .CONCEPT h2{
   font-size: 45px;
   margin-bottom:10px;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 .CONCEPT p{
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 30px;
 }
 
@@ -113,6 +149,9 @@ body{
 .FINALIST > h2{
   font-size: 45px;
   margin-top: 30px;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 .FINALIST_SOLO h2{
@@ -124,6 +163,9 @@ body{
   font-size: 40px;
   margin-top: 100px;
   margin-bottom: 0px;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 .FINALIST p{
@@ -158,12 +200,7 @@ body{
 .FINALIST_SOLOimage {
   width: 400px; /* 好きな幅に調整してね */
   text-align: center;
-}
-
-.FINALIST_SOLOimage img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* 角丸とかオシャレにしたかったら */
+ 
 }
 
 @media (max-width: 768px) {
@@ -183,7 +220,6 @@ body{
 
   .FINALIST_SOLOimage img {
     width: 100%;
-    height: auto;
   }
 }
 
@@ -199,6 +235,7 @@ body{
 .FINALIST_activity{
   margin-top: 20px;
   padding: 20px;
+  text-align: center;
 }
 
 .FINALIST_activity > h2{
@@ -206,6 +243,9 @@ body{
   margin-bottom: 20px;
   font-size: 40px;
   margin-top: 50px;
+  display: inline-block;
+  border-bottom: 1px solid gray;
+  padding: 0 40px;
 }
 
 .FINALIST_activity_boxes {
@@ -238,10 +278,18 @@ body{
   color: #555;
 }
 
+.FINALIST_SNS{
+  text-align: center;
+}
+
 .FINALIST_SNS h2{
   text-align: center;
   margin-top:30px;
+  margin-bottom: 20px;
   font-size: 40px;
+  display: inline-block;
+  border-bottom: 1px solid gray;
+  padding: 0 40px;
 }
 
 
@@ -250,12 +298,16 @@ body{
 
 .lastyear_wrapper {
   padding: 40px 20px;
+  text-align: center;
 }
 
 .lastyear_wrapper > h2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 32px;
+  display: inline-block;
+  border-bottom: 1px solid gray;
+  padding: 0 40px;
 }
 
 .lastyear_wrapper > p {
