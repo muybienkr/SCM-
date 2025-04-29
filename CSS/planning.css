@@ -47,12 +47,7 @@ body{
   font-family: sans-serif;
 }
 
-h2{
-  text-align: center;
-  margin: 8px 0;
-}
-
-.mocca_main{
+.department_main{
   position: relative;
   width: 100%;
   max-width: 3000px;
@@ -60,10 +55,10 @@ h2{
   text-align: center;
 }
 
-.mocca_main img{
+.department_main img{
   width: 100%;
   max-width: 3000px;
-  height: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -80,127 +75,106 @@ h2{
   white-space: nowrap;
 }
 
-@media (max-width: 480px){
-  .mocca_main img{
+.head{
+  display: flex;
+  margin: 100px 0 20px 60px;
+  gap: 10px;
+}
+
+.head_description{
+  flex: 1;
+  padding: 20px;
+}
+
+.head_description h2{
+  margin-bottom: 10px;
+  font-size: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.head_description h3{
+  margin-bottom: 80px;
+  border-bottom: 0;
+}
+
+.head_image{
+  flex: 1;
+}
+
+.head_image img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media(max-width: 480px){
+  .head{
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+  .head_image img{
     width: 100%;
     height: 300px;
     object-fit: cover;
   }
-  .text-overlay1{
-    font-size: clamp(16px, 5vw, 40px);
-  }
+
 }
 
-.mocca_introduction{
+.introduction1{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  margin-left: 60px;
-  margin-top: 200px;
+  align-items: stretch;
+  margin: 100px 60px 0;
 }
 
-.introduction_description{
-  width: 40%;
-  text-align: left;
+.card1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
 }
 
-.introduction_description h2{
-  text-align: left;
-  margin-bottom: 40px;
-  border-bottom: 1px solid gray;
+.card1-1, .card1-2{
+  flex: 1;
+  padding: 10px;
 }
 
-.mocca_image{
-  width: 60%;
+.card2{
+  width: 50%;
+  padding: 10px;
+  margin: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .mocca_introduction {
-    flex-direction: column-reverse; /* 縦並びに切り替え */
-    margin: 50px 0 20px 0;
+.introduction2{
+  display: flex;
+  margin: 20px 60px;
+}
+
+.introduction2-1,.introduction2-2{
+  flex: 1;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+@media(max-width: 480px){
+  .introduction1{
+    flex-direction: column;
+    margin: 20px;
+
   }
-  .mocca_image{
+  .card1,.card2{
     width: 100%;
   }
-  .introduction_description{
-    width: 80%;
-    text-align: center;
-  }
-  .introduction_description h2{
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .introduction_description button{
-    margin-top: 30px;
-  }
-}
-
-.mocca_achievements{
-  margin-top: 100px;
-}
-
-.mocca_achievements h2{
-  margin: 20px 400px 40px;;
-  border-bottom: 1px solid gray;
-}
-
-.card{
-  display: block;
-  border: 1px solid black;
-  overflow: hidden;
-  max-width: 1000px;
-  margin: 16px auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-.card-header{
-  padding: 8px;
-  border-bottom: 1px solid #eee;
-}
-
-.card-header .date{
-  font-size: 12px;
-  color: #888;
-}
-
-.card-header .title{
-  margin: 8px 0 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.card-body{
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  gap: 8px;
-}
-
-.card-image{
-  width: 40%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card-discription{
-  width: 60%;
-}
-
-@media (max-width: 480px) {
-  .mocca_achievements h2{
+  .introduction2{
+    flex-direction: column;
     margin: 20px;
   }
-  .card-body {
-    flex-direction: column; 
-    align-items: flex-start;
-  }
+}
 
-  .card-image,
-  .card-description {
-    width: 100%;
-  }
+h3{
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+
 }
 
 
@@ -258,7 +232,8 @@ footer{
 }
 
 button {
-  margin: 60px 0;
+  display: block;
+  margin: 80px auto;
   background-color: mediumturquoise; /* 背景色：緑っぽい */
   padding: 6px 12px; /* 内側の余白 */
   border: none; /* 枠線なし */
