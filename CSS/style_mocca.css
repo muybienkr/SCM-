@@ -258,20 +258,18 @@ footer{
 }
 
 button {
-  margin: 60px 0;
-  background-color: mediumturquoise; /* 背景色：緑っぽい */
-  padding: 6px 12px; /* 内側の余白 */
-  border: none; /* 枠線なし */
-  border-radius: 8px; /* 角丸 */
-  font-size: 20px; /* 文字サイズ */
-  cursor: pointer; /* マウスを当てたらポインターに */
-  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
-}
-
-button p{
-  color: white;
+  margin-top: 60px;
+  background-color: white;
+  border: 1px solid #00aaff;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 0 rgba(0, 170, 255, 0);
 }
 
 button:hover {
-  background-color: #45a049; /* ホバー時に少し濃い緑 */
+  background-color: #e6faff;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
 }
