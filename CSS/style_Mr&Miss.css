@@ -82,7 +82,319 @@ body{
 
 .TOP_SCM{
   text-align: center;
+  margin-top: 30px;
+}
+
+.TOP_SCM h2{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.CONCEPT{
+  text-align: center;
+  margin-top:70px;
+}
+
+.CONCEPT h2{
+  font-size: 45px;
+  margin-bottom:10px;
+}
+
+.CONCEPT p{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.FINALIST{
+  text-align: center;
+  margin-top:70px;
+}
+
+.FINALIST > h2{
+  font-size: 45px;
+  margin-top: 30px;
+}
+
+.FINALIST_SOLO h2{
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.FINALIST_SOLO h3{
+  font-size: 40px;
   margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.FINALIST p{
+  text-align: center;
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.SOLO_miss{
+  text-align: center;
+}
+
+.SOLO_mr{
+  text-align: center;
+}
+
+.TWINS{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.SOLO{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.FINALIST_SOLOimage {
+  width: 400px; /* 好きな幅に調整してね */
+  text-align: center;
+}
+
+.FINALIST_SOLOimage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* 角丸とかオシャレにしたかったら */
+}
+
+@media (max-width: 768px) {
+  .TWINS, .SOLO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .TWINS > .FINALIST_SOLOimage,
+  .SOLO > .FINALIST_SOLOimage {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .FINALIST_SOLOimage img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.FINALIST_activity{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.FINALIST_activity > h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.FINALIST_activity_boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* スマホ対応で折り返し可能に */
+}
+
+.FINALIST_activity_boxes > div {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.FINALIST_activity_boxes h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: center;
+}
+
+.FINALIST_activity_boxes p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.FINALIST_SNS h2{
+  text-align: center;
+  margin-top:30px;
+  font-size: 40px;
+}
+
+
+
+
+
+.lastyear_wrapper {
+  padding: 40px 20px;
+}
+
+.lastyear_wrapper > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.lastyear_wrapper > p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.lastyear_wrapper .activity_block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.lastyear_wrapper .activity_image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lastyear_wrapper .activity_text {
+  flex: 1;
+}
+
+.lastyear_wrapper .activity_text h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.lastyear_wrapper .activity_text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .lastyear_wrapper .activity_block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lastyear_wrapper .activity_image img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SNS{
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+.logo-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SNS_logo{
+  text-align: left;
+  margin: 20px 40px 20px;
+  padding-top: 40px;
+}
+
+.SNS_logo img{
+  width: 200px;
+}
+
+.gmail{
+  width: 200px;
+  text-align: center;
+}
+
+.bottom_list{
+  margin: 20px 40px 20px;
+  border: 1px solid gray;
+}
+
+.bottom_list ul{
+  padding: 8px 8px;
+  text-align: center;;
+}
+.bottom_list li{
+  margin-bottom: 4px;
+}
+.SNS_icon{
+  text-align: center;
+}
+.SNS_icon a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer{
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 4px 0;
+}
+
+button {
+  margin: 8px 0;
+  background-color: mediumturquoise; /* 背景色：緑っぽい */
+  color: white; /* 文字色：白 */
+  padding:6px 12px; /* 内側の余白 */
+  border: none; /* 枠線なし */
+  border-radius: 8px; /* 角丸 */
+  font-size: 20px; /* 文字サイズ */
+  cursor: pointer; /* マウスを当てたらポインターに */
+  transition: background-color 0.3s ease; /* ホバーしたときのアニメ */
+}
+
+button:hover {
+  background-color: #45a049; /* ホバー時に少し濃い緑 */
 }
 
 button {
