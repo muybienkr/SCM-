@@ -1,33 +1,16 @@
 @charset "UTF-8";
 
-.logo{
-  text-align: left;
-  margin: 10px auto;
-}
-
-.logo img{
-  width: 170px;
-  height: auto;
-}
-
 a{
+  display: flex;
   text-decoration: none;
   color: black;
+  font-size: 16px;
+  font-family: 'Shippori Mincho B1';
+  font-size: bold;
 }
 
 ul{
   list-style: none;
-}
-
-.header ul{
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 0 40px 0 40px;
-}
-
-.header ul li{
-  text-align: center;
 }
 
 .header {
@@ -35,16 +18,33 @@ ul{
   top: 0;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 120px;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header ul li{
+  padding: 10px 40px;
+  white-space: nowrap;
+}
+
+.header ul a:hover{
+  color: rgba(72, 211, 249, 0.936);
 }
 
 body{
-  padding-top: 160px;
+  padding-top: 120px;
   font-size: 16px;
-  font-family: sans-serif;
 }
 
 .TOP_main{
@@ -408,16 +408,21 @@ body{
 
 .bottom_list{
   margin: 20px 40px 20px;
-  border: 1px solid gray;
 }
 
 .bottom_list ul{
   padding: 8px 8px;
   text-align: center;;
 }
+
 .bottom_list li{
-  margin-bottom: 4px;
+  padding: 4px;
 }
+
+.bottom_list li a:hover{
+  color: rgba(72, 211, 249, 0.936);
+}
+
 .SNS_icon{
   text-align: center;
 }

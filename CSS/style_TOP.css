@@ -1,33 +1,16 @@
 @charset "UTF-8";
 
-.logo{
-  text-align: left;
-  margin: 10px auto;
-}
-
-.logo img{
-  width: 170px;
-  height: auto;
-}
-
 a{
+  display: flex;
   text-decoration: none;
   color: black;
+  font-size: 16px;
+  font-family: 'Shippori Mincho B1';
+  font-size: bold;
 }
 
 ul{
   list-style: none;
-}
-
-.header ul{
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 0 40px 0 40px;
-}
-
-.header ul li{
-  text-align: center;
 }
 
 .header {
@@ -35,14 +18,33 @@ ul{
   top: 0;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 120px;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 
+.header ul{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header ul li{
+  padding: 10px 40px;
+  white-space: nowrap;
+}
+
+.header ul a:hover{
+  color: rgba(72, 211, 249, 0.936);
+}
+
+
 body{
-  padding-top: 160px;
+  padding-top: 120px;
   font-size: 16px;
 }
 
@@ -72,8 +74,7 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: clamp(24px, 6vw, 40px);
-  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 80px;
   white-space: nowrap;
 }
 
@@ -89,14 +90,13 @@ h2{
 }
 
 .box1{
-  padding: 20px 0;
   margin-top: 100px;
   margin-bottom: 200px;
 }
 
 .TOP_SCM{
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 40px;
   margin-left: 60px;
@@ -104,6 +104,7 @@ h2{
 
 .SCM_description{
   width: 45%;
+  padding: 40px 0;
   text-align: left;
 }
 
@@ -121,20 +122,31 @@ h2{
   width: 55%;
 }
 
+.SCM_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media(max-width: 768px){
   .TOP_SCM{
     flex-direction: column-reverse;
     margin: 50px 0 20px 0;
+    text-align: center;
   }
   .SCM_image{
     width: 100%;
   }
   .SCM_description{
-    width: 80%;
+    width: 100%;
     text-align: center;
+    padding: 0 40px;
   }
   .SCM_description button{
     margin-top: 30px;
+  }
+  .SCM_description a{
+    display: block;
   }
 }
 
@@ -161,14 +173,15 @@ h2{
   gap: 20px;
 }
 
-.activity{
+.activity a{
+  display: block;
   padding: 20px;
   border: 1px solid black;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.activity:hover{
+.activity a:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -212,7 +225,11 @@ h2{
 
 .TOP_NEWS{
   display: block;
-  padding: 40px 100px;
+  padding: 0 100px;
+}
+
+.NEWS{
+  display: block;
 }
 
 .TOP_NEWS>a:first-child .card{
@@ -275,7 +292,6 @@ h2{
 
 .bottom_list{
   margin: 20px 40px 20px;
-  border: 1px solid gray;
 }
 
 .bottom_list ul{
@@ -283,8 +299,13 @@ h2{
   text-align: center;
 }
 .bottom_list li{
-  margin-bottom: 4px;
+  padding: 4px;
 }
+
+.bottom_list li a:hover{
+  color: rgba(72, 211, 249, 0.936);
+}
+
 .SNS_icon{
   text-align: center;
 }

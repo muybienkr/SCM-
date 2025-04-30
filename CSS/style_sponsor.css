@@ -1,33 +1,16 @@
 @charset "UTF-8";
 
-.logo{
-  text-align: left;
-  margin: 10px auto;
-}
-
-.logo img{
-  width: 170px;
-  height: auto;
-}
-
 a{
+  display: flex;
   text-decoration: none;
   color: black;
+  font-size: 16px;
+  font-family: 'Shippori Mincho B1';
+  font-size: bold;
 }
 
 ul{
   list-style: none;
-}
-
-.header ul{
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 0 40px 0 40px;
-}
-
-.header ul li{
-  text-align: center;
 }
 
 .header {
@@ -35,46 +18,55 @@ ul{
   top: 0;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 120px;
   background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header ul li{
+  padding: 10px 40px;
+  white-space: nowrap;
+}
+
+.header ul a:hover{
+  color: rgba(72, 211, 249, 0.936);
 }
 
 body{
-  padding-top: 160px;
+  padding-top: 120px;
   font-size: 16px;
-  font-family: sans-serif;
 }
 
-.TOP_main{
-  position: relative;
+.sponsor_main{
   width: 100%;
   max-width: 3000px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.TOP_main img{
+.sponsor_main img{
   width: 100%;
   max-width: 3000px;
-  height: auto;
-}
-
-.text-overlay1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: clamp(24px, 6vw, 75px);
-  background-color: rgba(0, 0, 0, 0.0);
-  padding: 10px 20px;
-  border-radius: 8px;
-  white-space: nowrap;
+  height: 480px;
+  object-fit: cover;
 }
 
 @media (max-width: 480px){
+  .mocca_main img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
   .text-overlay1{
     font-size: clamp(16px, 5vw, 40px);
   }
@@ -85,8 +77,8 @@ body{
   align-items: center;
   padding: 40px 60px;
   gap: 10px;
-  margin-bottom: 50px;
   border-bottom: 1px solid gray;
+  margin: 0 40px 50px;
 }
 
 .Logo_SCM{
@@ -100,9 +92,10 @@ body{
 
 .sponsor{
   display: inline-block;
-  
   margin-bottom: 24px;
   border-bottom: 1px solid gray;
+  font-size: 30px;
+  padding: 0 40px;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +104,7 @@ body{
     align-items: center;     /* 縦並び時にも中央揃えにする */
     padding: 20px;           /* スマホ用にパディング小さくしてもOK */
     gap: 20px;               /* スマホ用の間隔も調整 */
+    margin: 0;
   }
 
   .Logo_SCM {
@@ -167,16 +161,21 @@ body{
 
 .bottom_list{
   margin: 20px 40px 20px;
-  border: 1px solid gray;
 }
 
 .bottom_list ul{
   padding: 8px 8px;
   text-align: center;
 }
+
 .bottom_list li{
-  margin-bottom: 4px;
+  padding: 4px;
 }
+
+.bottom_list li a:hover{
+  color: rgba(72, 211, 249, 0.936);
+}
+
 .SNS_icon{
   text-align: center;
 }
