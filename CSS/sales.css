@@ -25,6 +25,7 @@ ul{
   display: flex;
   justify-content: space-between;
   gap: 60px;
+  transition: top 0.6s ease;
 }
 
 .header ul{
