@@ -150,6 +150,23 @@
     <P>&copy;吹田クリエイティブムーブメンツ</P>
   </footer>
 
-  <script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.SCM_main, .box3, .box4, .box5', { delay: 400,});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description h2', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description p', { delay: 600, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description h3', { delay: 700, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_image1', { delay: 800, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_image2', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.RINENN_description h2', { delay: 500, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.RINENN_description h3' , { delay:600, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.RINENN_description p', { delay: 700, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.RINENN_description', { delay: 800, origin: "right"});
+</script>
   </body>
 </html>

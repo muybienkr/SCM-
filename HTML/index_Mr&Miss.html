@@ -29,7 +29,7 @@
       <div class="text-overlay1"></div >
     </div>
 
-  <section>
+  <section class="box1">
     <div class="TOP_MISSMR">
       <h2>Mr & Miss Campus KANDAI </h2>
       <p>関西の学生による関西大学の学生のためのミス・ミスターキャンパス<br>ミス・ミスターそれぞれ5人のファイナリストがグランプリを目指し、活動します。<br>本年度でミスコンテストが16回目、ミスターコンテストが14回目の開催になります。<br>
@@ -48,7 +48,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="box2">
     <div class="CONCEPT">
       <h2>Concept</h2>
       <img src="../newimage/コンセプトロゴ（仮）.png" alt="コンセプトロゴ">
@@ -56,7 +56,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="box3">
     <div class ="FINALIST">
       <h2>Finalist</h2>
       <p>Coming soon</p>
@@ -132,7 +132,7 @@
        </div>
   </section>
   
-  <section>
+  <section class="box4">
     <div class="FINALIST_activity">
       <h2>Activity</h2>
      <div class="FINALIST_activity_boxes">
@@ -156,7 +156,7 @@
     </div>
   </section>
   
-  <section>
+  <section class="box5">
     <div class="FINALIST_SNS">
       <h2>official SNS</h2>
       <ul>
@@ -174,7 +174,7 @@
     </div>
   </section>
   
-  <section>
+  <section class="box6">
     <div class="lastyear_wrapper">
       <h2>昨年度の活動</h2>
       <p>2024年もたくさんの活動を行ってまいりました。その一部を抜粋して紹介します。</p>
@@ -248,5 +248,16 @@
   </footer>
 
   <script src="../JavaScript/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.TOP_main, .TOP_MISSMR, .box2, .FINALIST, .SOLO_miss, .SOLO_mr, .box4, .box5, .box6', { delay: 400,});
+  ScrollReveal({distance: "40px"}).reveal('.MISSMR_text h2', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.MISSMR_text p', { delay: 500, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.MISSMR_image', { delay: 600, origin: "right"});
+</script>
 </body>
 </html>

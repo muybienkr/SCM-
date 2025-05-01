@@ -150,5 +150,23 @@
   </footer>
 
   <script src="../JavaScript/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.mocca_main, .box3, .box4, .box5', { delay: 400,});
+  ScrollReveal({distance: "40px"}).reveal('.what_image', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.what_description h2', { delay: 600, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.what_description h3', { delay: 700, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.what_description h4', { delay: 800, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.what_description p', { delay: 900, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction_description h2', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction_description h3', { delay: 500, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction_description p' , { delay:600, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction_description a', { delay: 700, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.mocca_image', { delay: 800, origin: "right"});
+</script>
 </body>
 </html>

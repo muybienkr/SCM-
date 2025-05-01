@@ -28,7 +28,7 @@
       <img src="../newimage/ミス5人写真.jpg" alt="協賛のイメージ画像">
     </div>
 
-    <section>
+    <section class="box1">
       <div class="sponsor_top">
         <img src="../image/Logo_SCM.png" alt="SCMのロゴ" class="Logo_SCM">
         <div class="appriciation">
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="box2">
       <div class="sponsor_image">
         <img src="../image/Logo_SCM.png" alt="協賛1">
         <img src="../image/Logo_SCM.png" alt="協賛2">
@@ -94,5 +94,13 @@
   </footer>
 
   <script src="../JavaScript/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.sponsor_main, .box1, .box2', { delay: 400,});
+</script>
 </body>
 </html>
