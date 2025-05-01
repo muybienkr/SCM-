@@ -56,14 +56,12 @@ h2{
 .TOP_main{
   position: relative;
   width: 100%;
-  max-width: 3000px;
   text-align: center;
 }
 
 .TOP_main img{
   width: 100%;
-  max-width: 2000px;
-  height: 480px;
+  height: px;
   object-fit: cover;
 }
 
