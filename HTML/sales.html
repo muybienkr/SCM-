@@ -30,7 +30,7 @@
     <div class="text-overlay1">営業部</div >
   </div>
 
-  <sectin>
+  <sectin class="box1">
     <div class="head">
       <div class="head_description">
         <h2>営業部とは</h2>
@@ -117,5 +117,27 @@
 </footer>
 
 <script src="../JavaScript/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.department_main, button', { delay: 400,});
+  ScrollReveal({distance: "40px"}).reveal('.head_description h2', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.head_description h3', { delay: 600, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.head_description p', { delay: 700, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.head_image', { delay: 800, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.card1-1 h3', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.card1-1 p', { delay: 500, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.card1-2 h3', { delay: 600, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.card1-2 p' , { delay:700, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.card2 h3', { delay: 400, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.card2 p', { delay: 500, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction2-1 h3', { delay: 700, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction2-1 p', { delay: 800, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction2-2 h3', { delay: 700, origin: "right"});
+  ScrollReveal({distance: "40px"}).reveal('.introduction2-2 p', { delay: 800, origin: "right"});
+</script>
 </body>
 </html>
