@@ -139,10 +139,24 @@
   </section>
   </main>
     
-  <footer>
-    <P>&copy;吹田クリエイティブムーブメンツ</P>
+  <footer>, 
   </footer>
   
-  <script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: true,
+    duration: 2000,
+  });
+  ScrollReveal().reveal('.TOP_main, .ACT_h2, .ACT_h3, .activity, .NEWS_h2, .box3 h3, .TOP_NEWS', { delay: 400,});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description h2', { delay: 300, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description h3', { delay: 400, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description p', { delay: 500, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_description button', { delay: 600, origin: "left"});
+  ScrollReveal({distance: "40px"}).reveal('.SCM_image', { delay: 700, origin: "right"});
+
+
+</script>
   </body>
 </html>
