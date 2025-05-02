@@ -316,6 +316,16 @@ h2{
   height: 50px;
 }
 
+@media(max-width: 480px){
+  .logo-list{
+    display: block;
+  }
+  .SNS_logo{
+    width: 100%;
+    padding: 40px;
+  }
+}
+
 footer{
   border-top: 1px solid gray;
   text-align: center;
