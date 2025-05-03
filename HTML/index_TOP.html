@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../CSS/style_TOP.css">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&display=swap" rel="stylesheet">
   <title>TOP|吹田クリエイティブムーブメンツ</title>
   <meta name="description" content="吹田クリエイティブムーブメンツの公式サイトです。吹田市を拠点に活動する学生団体が発信しています。">
@@ -25,12 +27,33 @@
   </header>
 
   <main>
-    <div class="TOP_main">
-      <img src="../newimage/ミスキャンお披露目集合写真.jpeg" alt="メインの写真">
-      <div class="text-overlay1">吹田から全国へ</div >
+   <div class="swiper">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide TOP_main">
+      <img src="../newimage/ミスキャンお披露目集合写真.jpeg" alt="スライド１">
+     </div>
+     <div class="swiper-slide TOP_main">
+      <img src="../newimage/SCM白浜2回生.jpg" alt="スライド２">
+     </div>
+     <div class="swiper-slide TOP_main">
+      <img src="../newimage/SCM白浜1回生.jpg" alt="スライド３">
+     </div>
+     <div class="swiper-slide TOP_main">
+      <img src="../newimage/SCM白浜三回生.JPG" alt="スライド４">
+     </div>
+     <div class="swiper-slide TOP_main">
+      <img src="../newimage/白浜候補者.jpg" alt="スライド５">
+     </div>
     </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
   <section class="box1">
+    <div class="TOP_text">
+      <h1>吹田から全国へ</h1>
+    </div>
     <div class="TOP_SCM">
       <div class="SCM_description">
         <h2>SCMとは</h2>
@@ -149,7 +172,13 @@
     reset: false,
     duration: 2000,
   });
-  ScrollReveal().reveal('.TOP_main, .box2, .box3', { delay: 400,});
+
+  ScrollReveal().reveal('.TOP_main', { 
+    delay: 400,
+    reset: false,
+    opacity:1
+  });
+  ScrollReveal().reveal('.box2, .box3', { delay: 400,});
   ScrollReveal({distance: "40px"}).reveal('.SCM_description h2', { delay: 300, origin: "left"});
   ScrollReveal({distance: "40px"}).reveal('.SCM_description h3', { delay: 400, origin: "left"});
   ScrollReveal({distance: "40px"}).reveal('.SCM_description p', { delay: 500, origin: "left"});
@@ -158,5 +187,38 @@
 
 
 </script>
-  </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  /* ▼ Swiper を初期化するコード */
+  const swiper = new Swiper('.swiper', {
+    loop: true,          // 最後まで行ったら先頭に戻る
+    effect: 'fade', // フェード切り替え（slide に変えれば横スライド）
+    speed: 800,          // 切り替えアニメーション時間 (ms)
+    autoplay: {
+      delay: 4000,       // 4秒ごとに自動再生
+      disableOnInteraction: false  // 手動操作後も自動再開
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true     // ドットをクリック可
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    on: {
+      init(sw) {
+        // 初期スライドに first-load クラスを付ける
+        sw.slides[sw.activeIndex].classList.add("first-load");
+      },
+      // 1 枚目から次へ遷移したらクラスを外す（以後は通常フェード）
+      slideChangeTransitionEnd(sw) {
+        sw.slides.forEach(slide => slide.classList.remove("first-load"));
+      }
+    }
+  });
+</script>
+ 
+</body>
 </html>

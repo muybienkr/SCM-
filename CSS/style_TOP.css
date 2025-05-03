@@ -53,29 +53,62 @@ h2{
   font-size: 40px;
 }
 
-.TOP_main{
+
+
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 60vh;        /* 例：画面の 60% をいつでも確保 */
+  /* ↑ 固定にしたいなら 600px などでも OK */
+  overflow: hidden;    /* ここ超重要！  はみ出した分をカット */
+  position: relative;  /* 内側の absolute を基準にするため */
+}
+
+@media (max-width: 768px){   /* 768px 未満を“スマホ”扱い */
+  .swiper{
+    height:45vh;       /* お好みで 40〜50vh に */
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.swiper-slide.TOP_main{
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-.TOP_main img{
+.swiper-slide img{
   width: 100%;
-  height: px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover;     /* ← これが“揃え”のキモ！ */
+  object-position: center; /* 必要ならフォーカス調整 */
 }
 
-.text-overlay1{
-  font-family: 'Shippori Mincho B1';
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 80px;
-  white-space: nowrap;
+@keyframes firstFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
+
+.swiper-slide.first-load {
+  animation: firstFade 3s ease forwards;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 768px){
   .TOP_main img{
@@ -89,9 +122,46 @@ h2{
 }
 
 .box1{
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
+.TOP_text{ /*ここおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお！！！！！！デカタイトル！！！*/
+  text-align: center;
+  margin-top: min(10vw, 40px);
+}
+
+.TOP_text h1{
+  /* 1. 画面幅で伸縮 ─ clamp(最小, 伸び幅, 最大) */
+  font-size: clamp(32px, 8vw + 14px, 80px);
+
+  /* 2. グラデーション文字 */
+  background: linear-gradient(90deg, #008ffb 0%, #6bcfff 40%, #ffffff 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* 3. 立体感のシャドウ */
+  text-shadow: 0 4px 8px rgba(0,0,0,.25);
+
+  font-family: 'Shippori Mincho B1', serif;
+  letter-spacing: .08em;
+  margin:0;                   /* 余計なズレ防止 */
+  position: relative;
+  opacity:0;                  /* アニメ用初期値 */
+  transform: translateY(20px);
+  animation: floatIn 1.2s ease-out .3s forwards;
+}
+
+/* ---------- 登場アニメ ---------- */
+@keyframes floatIn{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- スマホで改行したい時は ↓ 解除 ---------- */
+/* .TOP_text h1{ white-space: nowrap; } */
 
 .TOP_SCM{
   display: flex;
@@ -118,6 +188,7 @@ h2{
 }
 
 .SCM_image{
+  margin-top: 40px;
   width: 55%;
 }
 

@@ -95,7 +95,7 @@ body{
 }
 
 .TOP_MISSMR p{
-  font-size: 18px;;
+  font-size: 15px;;
 }
 
 .SECOND_MISSMR{
@@ -113,7 +113,7 @@ body{
 }
 
 .MISSMR_text p{
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 20px;
 }
 
@@ -145,7 +145,7 @@ body{
 }
 
 .CONCEPT p{
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 30px;
 }
 
@@ -374,11 +374,17 @@ FINALIST_SNS_list li img:hover{
   margin-bottom: 50px;
 }
 
-.lastyear_wrapper .activity_image img {
+.lastyear_wrapper .activity_image{
   width: 450px;
-  height: auto;
-  max-width: 100%;
-  border-radius: 8px;
+  aspect-ratio: 16/9; /* アスペクト比を16:9に設定 */
+  overflow: hidden; /* はみ出た部分を隠す */
+  border-radius: 8px; /* 角丸にする */
+}
+
+.lastyear_wrapper .activity_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像を枠に合わせてカット */
 }
 
 .lastyear_wrapper .activity_text {
@@ -396,7 +402,7 @@ FINALIST_SNS_list li img:hover{
 }
 
 /* スマホ対応 */
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .lastyear_wrapper .activity_block {
     flex-direction: column;
     text-align: center;
@@ -409,7 +415,7 @@ FINALIST_SNS_list li img:hover{
 
 .activity_four{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap; /* スマホ対応で折り返し可能に */
 }
