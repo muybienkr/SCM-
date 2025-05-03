@@ -122,13 +122,13 @@ h2{
 }
 
 .box1{
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
 .TOP_text{ /*ここおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお！！！！！！デカタイトル！！！*/
   text-align: center;
-  margin-top: min(10vw, 40px);
+  margin-top: min(8vw, 32px);
 }
 
 .TOP_text h1{
@@ -188,7 +188,7 @@ h2{
 }
 
 .SCM_image{
-  margin-top: 40px;
+  margin-top: 25px;
   width: 55%;
 }
 
