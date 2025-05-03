@@ -161,7 +161,7 @@ body{
   margin: 0 20px;
 }
 
-@media(max-width: 480px){
+@media(max-width: 768px){
   .introduction1{
     flex-direction: column;
     margin: 20px;
@@ -234,6 +234,15 @@ h3{
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 768px){
+  .logo-list{
+    display: none;
+  }
+  .SNS_icon{
+    padding-top: 40px;
+  }
 }
 
 footer{

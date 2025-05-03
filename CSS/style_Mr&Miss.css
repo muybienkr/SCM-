@@ -75,7 +75,7 @@ body{
   white-space: nowrap;
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
   .text-overlay1{
     font-size: clamp(16px, 5vw, 40px);
   }
@@ -415,30 +415,6 @@ FINALIST_SNS_list li img:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .SNS{
   margin-top: 100px;
   background-color: whitesmoke;
@@ -489,6 +465,15 @@ FINALIST_SNS_list li img:hover{
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 768px){
+  .logo-list{
+    display: none;
+  }
+  .SNS_icon{
+    padding-top: 40px;
+  }
 }
 
 footer{
