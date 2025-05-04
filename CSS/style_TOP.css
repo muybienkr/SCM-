@@ -128,10 +128,10 @@ h2{
 }
 
 .slide1 { background-image: url("../newimage/ミスキャンお披露目集合写真.jpeg"); }
-.slide2 { background-image: url("../newimage/SCM白浜2回生.jpg"); }
-.slide3 { background-image: url("../newimage/SCM白浜1回生.jpg"); }
-.slide4 { background-image: url("../newimage/SCM白浜三回生.JPG"); }
-.slide5 { background-image: url("../newimage/白浜候補者.jpg"); }
+.slide2 { background-image: url("../newimage/topスライド.JPG"); }
+.slide3 { background-image: url("../newimage/SCMTOP候補.jpg"); }
+.slide4 { background-image: url("../newimage/topスライド2.jpg"); }
+.slide5 { background-image: url("../newimage/topスライド3.jpg"); }
 
 @media (max-width: 768px){   /* 768px 未満を“スマホ”扱い */
   .swiper{

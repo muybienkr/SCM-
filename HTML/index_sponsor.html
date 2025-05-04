@@ -13,13 +13,20 @@
   <header>
     <div class="header" id="header">
         <img src="../image/Logo_SCM.png" alt="吹田クリエイティブムーブメンツ">
-        <ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+         <ul>
           <li><a href="index_TOP.html">TOP</a></li>
           <li><a href="index_SCM.html">SCM</a></li>
           <li><a href="index_Mr&Miss.html">Mr&Miss Cumpas</a></li>
           <li><a href="index_mocca.html">mocca</a></li>
           <li><a href="index_sponsor.html">協賛</a></li>
-        </ul>
+         </ul>
+        </nav>
     </div>
   </header>
 
@@ -101,6 +108,16 @@
     duration: 2000,
   });
   ScrollReveal().reveal('.sponsor_main, .box1, .box2', { delay: 400,});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  });
 </script>
 </body>
 </html>

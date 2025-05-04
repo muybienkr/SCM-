@@ -14,13 +14,20 @@
   <header>
     <div class="header" id="header">
         <img src="../image/Logo_SCM.png" alt="吹田クリエイティブムーブメンツ">
-        <ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+         <ul>
           <li><a href="index_TOP.html">TOP</a></li>
           <li><a href="index_SCM.html">SCM</a></li>
           <li><a href="index_Mr&Miss.html">Mr&Miss Cumpas</a></li>
           <li><a href="index_mocca.html">mocca</a></li>
           <li><a href="index_sponsor.html">協賛</a></li>
-        </ul>
+         </ul>
+        </nav>
     </div>
   </header>
   
@@ -137,6 +144,17 @@
   ScrollReveal({distance: "40px"}).reveal('.introduction2-1 p', { delay: 800, origin: "left"});
   ScrollReveal({distance: "40px"}).reveal('.introduction2-2 h3', { delay: 700, origin: "right"});
   ScrollReveal({distance: "40px"}).reveal('.introduction2-2 p', { delay: 800, origin: "right"});
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  });
 </script>
 </body>
 </html>

@@ -35,7 +35,10 @@ ul{
 }
 
 .header ul li{
-  padding: 10px 40px;
+  padding-top: 40px;    /* ← ここに上だけ余白を設定！ */
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
   white-space: nowrap;
 }
 
@@ -43,10 +46,139 @@ ul{
   color: rgba(72, 211, 249, 0.936);
 }
 
+.hamburger {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 15px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-menu ul li {
+    padding: 10px 40px;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+}
+
 body{
   padding-top: 120px;
   font-size: 16px;
 }
+
+.swiper {
+  width: 100%;
+  height: 75vh;        /* 例：画面の 60% をいつでも確保 */
+  /* ↑ 固定にしたいなら 600px などでも OK */
+  overflow: hidden;    /* ここ超重要！  はみ出した分をカット */
+  position: relative;  /* 内側の absolute を基準にするため */
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* ← PCではドーンと表示 */
+}
+
+.slide1 { background-image: url("../newimage/mocca活動中写真横3.jpg"); }
+.slide2 { background-image: url("../newimage/moccaトップ2.jpg"); }
+.slide3 { background-image: url("../newimage/moccaトップ3.jpg"); }
+.slide4 { background-image: url("../newimage/moccaトップ4.jpg"); }
+.slide5 { background-image: url("../newimage/moccaトップ5.jpg"); }
+
+@media (max-width: 768px){   /* 768px 未満を“スマホ”扱い */
+  .swiper{
+    height:55vh;       /* お好みで 40〜50vh に */
+  }
+
+.swiper-slide {  
+  background-size: cover;      /* ← 切らない！ */
+  background-color: #fff;           /* 余白が白になるように */
+}
+}
+
+@keyframes firstFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.swiper-slide.first-load {
+  animation: firstFade 3s ease forwards;
+}
+
+.TOP_text{ /*ここおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお！！！！！！デカタイトル！！！*/
+  text-align: center;
+  margin-top: min(5vw, 25px);
+  margin-bottom: 20px;
+}
+
+.TOP_text h1{
+  /* 1. 画面幅で伸縮 ─ clamp(最小, 伸び幅, 最大) */
+  font-size: clamp(32px, 8vw + 14px, 80px);
+
+  /* 2. グラデーション文字 */
+  background: linear-gradient(90deg, #008ffb 0%, #6bcfff 40%, #ffffff 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* 3. 立体感のシャドウ */
+  text-shadow: 0 4px 8px rgba(0,0,0,.25);
+
+  font-family: 'Shippori Mincho B1', serif;
+  letter-spacing: .08em;
+  margin:0;                   /* 余計なズレ防止 */
+  position: relative;
+  opacity:0;                  /* アニメ用初期値 */
+  transform: translateY(20px);
+  animation: floatIn 1.2s ease-out .3s forwards;
+}
+
+/* ---------- 登場アニメ ---------- */
+@keyframes floatIn{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- スマホで改行したい時は ↓ 解除 ---------- */
+/* .TOP_text h1{ white-space: nowrap; } */
 
 h2{
   text-align: center;
@@ -89,7 +221,8 @@ h2{
 }
 
 .box1{
-  margin: 100px 0 200px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .what{
