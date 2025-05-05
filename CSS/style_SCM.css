@@ -221,7 +221,7 @@ body{
 
 .box1{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .SCM_SCM{
@@ -551,7 +551,7 @@ body{
     display: none;
   }
   .SNS_icon{
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 
