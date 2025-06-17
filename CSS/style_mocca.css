@@ -346,7 +346,7 @@ h2{
 }
 
 .box3{
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .mocca_achievements h2{
@@ -502,4 +502,62 @@ button {
 button:hover {
   background-color: #e6faff;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+/*追加分*/
+
+/* 既存全体と調和させた調整済みスタイル */
+
+.box2_5 {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin: 80px auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-width: 960px;
+}
+
+.mocca_main5 {
+  font-family: 'Shippori Mincho B1', serif;
+  color: #2c2c2c;
+  line-height: 2;
+  padding: 0 24px;
+}
+
+.mocca_main5 h2 {
+  font-size: 28px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  color: #007acc;
+  border-left: 6px solid #007acc;
+  padding-left: 14px;
+}
+
+.mocca_main5 p {
+  font-size: 17px;
+  margin-bottom: 40px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .box2_5 {
+    padding: 40px 16px;
+    margin: 40px 16px;
+  }
+
+  .mocca_main5 {
+    padding: 0;
+  }
+
+  .mocca_main5 h2 {
+    font-size: 22px;
+    padding-left: 12px;
+    margin-top: 36px;
+  }
+
+  .mocca_main5 p {
+    font-size: 15.5px;
+    margin-bottom: 32px;
+  }
 }
