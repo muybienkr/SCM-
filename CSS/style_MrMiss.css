@@ -116,10 +116,10 @@ body{
   background-size: cover; /* ← PCではドーンと表示 */
 }
 
-.slide1 { background-image: url("../newimage/ミスキャン1 新.jpg"); }
-.slide2 { background-image: url("../newimage/ミスキャンスライド2.jpg"); }
-.slide3 { background-image: url("../newimage/ミスキャンスライド3.jpg"); }
-.slide4 { background-image: url("../newimage/ミスキャン新2.jpg"); }
+.slide1 { background-image: url("../newimage/ファイナリスト2025集合.JPG"); }
+.slide2 { background-image: url("../newimage/MR集合写真.jpg"); }
+.slide3 { background-image: url("../newimage/MISS集合写真.jpg"); }
+.slide4 { background-image: url("../newimage/裏背景.png"); }
 .slide5 { background-image: url("../newimage/ミスキャンスライド5.jpg"); }
 
 @media (max-width: 768px){   /* 768px 未満を“スマホ”扱い */
@@ -248,6 +248,10 @@ body{
   margin-top:70px;
 }
 
+.FINALIST_SOLO{
+  list-style: none;
+}
+
 .FINALIST > h2{
   font-size: 45px;
   margin-top: 30px;
@@ -257,8 +261,6 @@ body{
 }
 
 .FINALIST_image{
-  display: flex;
-  gap: 50px;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
@@ -266,7 +268,8 @@ body{
 }
 
 .FINALIST_image img{
-  width: 500px;;
+  width: 100%;
+  text-align: center;
   height: auto;
   display: block;
 }
@@ -420,14 +423,15 @@ body{
   margin-top: 20px;
 }
 
-FINALIST_SNS_list li img{
+.FINALIST_SNS_list li img{
   width: 180px;
-  height: auto;
-  border-radius: 8px;
+  height: 180px;
+  border-radius: 50%;
   transition: transform 0.3s ease;
+  
 }
 
-FINALIST_SNS_list li img:hover{
+.FINALIST_SNS_list li img:hover{
   transform: scale(1.05); /* ホバー時に少し拡大 */
 }
 
