@@ -446,7 +446,6 @@ body{
 .lastyear_wrapper {
   padding: 40px 20px;
   text-align: center;
-  align-items: st;
 }
 
 .lastyear_wrapper > h2 {
@@ -458,66 +457,48 @@ body{
   padding: 0 40px;
 }
 
-.lastyear_wrapper > p {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 18px;
+.activity_block{
+  border: 1px solid gray;
+  padding: 12px;
+  margin: 24px 160px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
 }
 
-.lastyear_wrapper .activity_block {
+.activity_block h3{
+  font-size: 24px;
+  text-align: left;
+  padding: 8px;
+  margin: 8px;
+  border-bottom: 1px solid lightgray;
+}
+
+.activity_container{
   display: flex;
+  gap: 12px;
   align-items: center;
-  gap: 30px;
-  flex: 0 1 calc(50% - 15px); /* 50%の幅を持つが、20pxの隙間を考慮 */
-  margin-bottom: 50px;
 }
 
-.lastyear_wrapper .activity_image{
-  width: 450px;
-  aspect-ratio: 16/9; /* アスペクト比を16:9に設定 */
-  overflow: hidden; /* はみ出た部分を隠す */
-  border-radius: 8px; /* 角丸にする */
-}
-
-.lastyear_wrapper .activity_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 画像を枠に合わせてカット */
-}
-
-.lastyear_wrapper .activity_text {
+.activity_image{
   flex: 1;
 }
 
-.lastyear_wrapper .activity_text h3 {
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-.lastyear_wrapper .activity_text p {
-  font-size: 16px;
-  line-height: 1.6;
+.activity_text{
+  flex: 1;
+  text-align: left;
 }
 
 /* スマホ対応 */
-@media (max-width: 1500px) {
-  .lastyear_wrapper .activity_block {
+@media (max-width: 1000px) {
+  .lastyear_wrapper{
+    padding: 8px;
+  }
+  .activity_block{
+    margin: 12px 0px;
+  }
+  .activity_container{
     flex-direction: column;
-    text-align: center;
-  }
-
-  .lastyear_wrapper .activity_image img {
-    width: 100%;
   }
 }
-
-.activity_four{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* スマホ対応で折り返し可能に */
-}
-
 
 .SNS{
   margin-top: 100px;
