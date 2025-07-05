@@ -292,6 +292,8 @@ h2{
   overflow: hidden;
   height: 100%;
   flex: 1;
+  border: 1px solid gray;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .activity p {
@@ -303,9 +305,7 @@ h2{
   display: block;
   height: 100%;
   padding: 20px;
-  border: 1px solid black;
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .activity a:hover{
